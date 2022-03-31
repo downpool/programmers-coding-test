@@ -150,3 +150,7 @@ fabric.properties
 /package.json
 /package-lock.json
 /node_modules/
+
+# 리드미 자동 업데이트 관련 폴더
+/utils
+/.github/workflows
