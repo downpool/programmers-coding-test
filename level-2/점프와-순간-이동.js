@@ -13,3 +13,25 @@ function solution(n) {
     }
     return ans;
 }
+
+//정답 2 (dp이용) - downpool
+function solution(n){
+    let ans = 0;
+
+    function DP(a){
+        if(a <= 1){
+            ans++;
+            return;
+        }else{
+            if(a % 2 == 0){
+                return DP(a / 2);
+            }else{
+                ans++;
+                return DP(a - 1);
+            }
+        }
+    }
+    DP(n);
+
+    return ans;
+}
